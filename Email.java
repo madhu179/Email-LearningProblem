@@ -7,7 +7,7 @@ public class Email
       Scanner sc = new Scanner(System.in);
       System.out.println("Enter the Email");
       String mail = sc.nextLine();
-      String regex = "[a-zA-Z]+"; 
+      String regex = "[a-zA-Z]+@[a-zA-Z]+"; 
       Pattern patrn = Pattern.compile(regex);
       Matcher m = patrn.matcher(mail);
       if(m.matches())
